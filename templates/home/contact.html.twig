@@ -96,21 +96,21 @@
                 <label class="name">
                     <input type="text" id="messages_note" name="messages[note]" placeholder="Name:" data-constraints="@Required @JustLetters" />
                     <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid name.</span>
+                    <span class="error-message">*This is not a valid name.</span><br>
                 </label>
                 <label class="email">
                     <input type="text" id="messages_email" name="messages[email]" placeholder="Email:" data-constraints="@Required @Email" />
                     <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid email.</span>
+                    <span class="error-message">*This is not a valid email.</span><br>
                 </label>
                 <label class="country">
                     <input type="text" id="messages_country" name="messages[country]" placeholder="Country:" data-constraints="@Required @JustLetters"/>
                     <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid phone.</span>
+                    <span class="error-message">*This is not a valid phone.</span><br>
                 </label>
                 <label class="message">
                     <textarea placeholder="Message:" id="messages_messages" name="messages[messages]" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                    <input type="hidden" name="token" value="{{ csrf_token('form-messages') }}" />
+                    <input type="hidden" name="token" value="{{ csrf_token('form-messages') }}" /><br>
                     <input type="submit" value="send">
                 </label>
 
